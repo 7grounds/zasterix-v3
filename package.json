@@ -1,13 +1,23 @@
-09:09:08.411 Running build in Washington, D.C., USA (East) – iad1 (Turbo Build Machine)
-09:09:08.412 Build machine configuration: 30 cores, 60 GB
-09:09:08.512 Cloning github.com/7grounds/zasterix-v3 (Branch: main, Commit: e70f97c)
-09:09:08.513 Previous build caches not available.
-09:09:08.650 Cloning completed: 138.000ms
-09:09:08.971 Running "vercel build"
-09:09:09.737 Vercel CLI 50.14.1
-09:09:09.935 Your application is being built using `next build`. If you need to define a different build step, please create a `vercel-build` script in your `package.json` (e.g. `{ "scripts": { "vercel-build": "npm run prepare && next build" } }`).
-09:09:09.937 Installing dependencies...
-09:09:10.457 
-09:09:10.458 up to date in 338ms
-09:09:10.482 Warning: Could not identify Next.js version, ensure it is defined as a project dependency.
-09:09:10.500 Error: No Next.js version detected. Make sure your package.json has "next" in either "dependencies" or "devDependencies". Also check your Root Directory setting matches the directory of your package.json file.
+{
+  "name": "zasterix-v3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "15.1.6",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "@supabase/supabase-js": "^2.48.1",
+    "openai": "^4.83.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "@types/node": "^22.13.1",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3"
+  }
+}
